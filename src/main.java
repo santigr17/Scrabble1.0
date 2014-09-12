@@ -22,6 +22,7 @@ public class main {
      */
     public static void main(String[] args) 
     {
+        Lectura l=new Lectura();
        //ventana p=new ventana();
         Scanner dato=new Scanner(System.in);
         String palabra;
@@ -32,9 +33,10 @@ public class main {
             int resultScore = wordScore.CalculateScore();
             System.out.println( resultScore);
     }
+   
     WordScore wordScore = new WordScore("palabra");
     int resultScore = wordScore.CalculateScore();
     System.out.println( resultScore);
-    }
+
     
 }
