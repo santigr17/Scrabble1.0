@@ -20,7 +20,7 @@ public class main {
     public static void main(String[] args) 
     {
    
-    WordScore wordScore = new WordScore("edder");
+    WordScore wordScore = new WordScore("palabra");
     int resultScore = wordScore.CalculateScore();
     System.out.println( resultScore);
 
