@@ -1,4 +1,5 @@
 
+import static constants.Constants.DICTIONARY_PATH;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -21,7 +22,7 @@ public class Lectura {
         
             try
             {
-                File archivo=new File("/home/emily/Scrabble/diccionario.TXT");
+                File archivo=new File(DICTIONARY_PATH);
                 BufferedReader entrada;          
                 entrada=new BufferedReader(new FileReader(archivo));
                 String Linea;
@@ -39,5 +40,7 @@ public class Lectura {
             {error.printStackTrace();
                 return false;
             }
+            
+
         }
 }

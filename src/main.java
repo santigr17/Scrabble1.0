@@ -32,12 +32,6 @@ public class main {
             WordScore wordScore = new WordScore(palabra);
             int resultScore = wordScore.CalculateScore();
             System.out.println( resultScore);
-    }
-   
-    WordScore wordScore = new WordScore("palabra");
-    int resultScore = wordScore.CalculateScore();
-    System.out.println( resultScore);
-
-    
+    }   
 }
 }
