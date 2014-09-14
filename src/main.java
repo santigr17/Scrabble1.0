@@ -21,7 +21,8 @@ public class main
      */
     public static void main(String[] args) 
     {   
-       
+        principal P=new principal();
+        P.pintar();
         MatrizTablero x=new MatrizTablero();
         x.madematriz();
         Lectura l=new Lectura();
