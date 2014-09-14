@@ -50,7 +50,8 @@ public class GameArea extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bolsaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bolsaActionPerformed
-        // TODO add your handling code here:
+        random R=new random();
+        R.random();
     }//GEN-LAST:event_bolsaActionPerformed
 
     public void pintar() {

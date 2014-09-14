@@ -1,5 +1,6 @@
-
 package GUI;
+import java.util.Random;
+
 
 /**
  *
@@ -7,5 +8,8 @@ package GUI;
  */
 
 public class random {
-    
+Random R=new Random ();
+    public void random(){
+    System.out.println("Numero aleatorio"+R.nextInt());
+    }
 }
