@@ -48,7 +48,8 @@ public class principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     private void playActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playActionPerformed
-        // TODO add your handling code here:
+       GameArea GA=new GameArea();
+       GA.pintar();
     }//GEN-LAST:event_playActionPerformed
 
     /**
