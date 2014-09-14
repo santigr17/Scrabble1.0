@@ -12,25 +12,31 @@ import Listas.simplelist.SimpleList;
  *
  * @author edr2394
  */
-public class WordScore {
+public class WordScore 
+{
     String word;
 
-    public WordScore ( String pWord){
+    public WordScore ( String pWord)
+    {
         this.word = pWord;
     }
 
-    public int CalculateScore(){
+    public int CalculateScore()
+    {
         return addScores(scoreCalc(wordToCharList(this.word)));
     }
     
     private SimpleList<Character> wordToCharList(String pWord){
         SimpleList <Character> charList = new SimpleList(); 
-        try {
-            for (int i  = 0  ; i < pWord.length() ; i ++){
+        try 
+        {
+            for (int i  = 0  ; i < pWord.length() ; i ++)
+            {
                 charList.append(pWord.charAt(i));
             }
             return charList;
-        }catch (Exception e){
+        }
+        catch (Exception e){
             System.out.println ("Error");
             return charList;
         }
@@ -91,22 +97,23 @@ public class WordScore {
                         tmp.equals("z"))
                 {
                     scores.append(10);
-                }else{
+                }
+                else
+                {
                     System.out.println("Invalid word");
                 }
                 tmpString.cut();
-            //}catch(Exception e){
-              //  return scores;
-            //}
+                System.out.println(scores.describe());
         }
         return scores;
     }
-    private int addScores(SimpleList<Integer> pScores){
-        
+    private int addScores(SimpleList<Integer> pScores)
+    { 
         int tmp = 0;
-        while (pScores.length() != 0){
+        while (pScores.length() != 0)
+        {
             int tmp2 = pScores.getTailData();
-            //System.out.println(tmp2);
+            System.out.println(tmp2);
             tmp += tmp2;            
             tmp2 = pScores.cut();
         }
