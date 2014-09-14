@@ -2,6 +2,7 @@
 import Listas.simplelist.SimpleList;
 import java.util.Scanner;
 import wordScore.WordScore;
+import GUI.principal;
 
 
 
@@ -21,7 +22,8 @@ public class main {
      * @param args the command line arguments
      */
     public static void main(String[] args) 
-    {
+    {   principal p=new principal();
+        p.vent();
         Lectura l=new Lectura();
        //ventana p=new ventana();
         Scanner dato=new Scanner(System.in);
