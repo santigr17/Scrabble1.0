@@ -46,8 +46,6 @@ class SimpleListIterator<K> implements Iterator<K> {
 public class SimpleList<K> implements ListInterface<K>, Iterable<K> {
     
     protected int length;
-//    protected double _start;
-//    protected double _end;
     protected SimpleListNode<K> head;
     protected SimpleListNode<K> tail;
 
@@ -65,7 +63,6 @@ public class SimpleList<K> implements ListInterface<K>, Iterable<K> {
     @Override
     public boolean append(K pk) {
         SimpleListNode<K> node = new SimpleListNode<K>(pk);
-//        _start = System.currentTimeMillis();
 
         if(isEmpty()) {
             this.head = node;
@@ -74,17 +71,12 @@ public class SimpleList<K> implements ListInterface<K>, Iterable<K> {
         }
         this.tail = node;
         this.length += 1;
-//        _end = System.currentTimeMillis();
-//        System.out.println("Append lasted:  " + getExecuteTime());
         return true;
     }
 
     @Override
     public boolean delete(K pk) {
-//    	_start = System.currentTimeMillis();
         if(isEmpty()) {
-//        	_end = System.currentTimeMillis();
-//        	System.out.println("Delete lasted:  " + getExecuteTime());
             return false;
         }
         
@@ -101,8 +93,6 @@ public class SimpleList<K> implements ListInterface<K>, Iterable<K> {
 
         // If not found
         if(current == null) {
-//        	_end = System.currentTimeMillis();
-//        	System.out.println("Delete lasted:  " + getExecuteTime());
             return false;
         }
 
@@ -122,8 +112,6 @@ public class SimpleList<K> implements ListInterface<K>, Iterable<K> {
         current.setNext(null);
         current = null;
         this.length -= 1;
-//        _end = System.currentTimeMillis();
-//        System.out.println("Delete lasted:  " + getExecuteTime());
         return true;
     }
 
@@ -134,29 +122,22 @@ public class SimpleList<K> implements ListInterface<K>, Iterable<K> {
 
     @Override
     public boolean exists(K pk) {
-//    	_start = System.currentTimeMillis();
         for(K ck : this) {
             if(ck.equals(pk)) {
-//            	_end = System.currentTimeMillis();
-//            	System.out.println("Delete lasted:  " + getExecuteTime());
                 return true;
             }
         }
-//        _end = System.currentTimeMillis();
-//        System.out.println("Delete lasted:  " + getExecuteTime());
+
         return false;
     }
 
     @Override
     public boolean insert(int pos, K pk) {
-//    	_start = System.currentTimeMillis();
 
         SimpleListNode<K> node = new SimpleListNode<K>(pk);
 
         // Check valid position
         if((pos < 0) || (pos > this.length)) {
-//        	_end = System.currentTimeMillis();
-//        	System.out.println("Insert lasted:  " + getExecuteTime());
             return false;
         }
 
@@ -184,14 +165,11 @@ public class SimpleList<K> implements ListInterface<K>, Iterable<K> {
         }
 
         this.length += 1;
-//        _end = System.currentTimeMillis();
-//        System.out.println("Insert lasted:  " + getExecuteTime());
         return true;
     }
     
     @Override
     public boolean insert(K pk) {
-//    	_start = System.currentTimeMillis();
         SimpleListNode<K> node = new SimpleListNode<K>(pk);
 
         // Insert node
@@ -201,8 +179,6 @@ public class SimpleList<K> implements ListInterface<K>, Iterable<K> {
         this.head = node;
 
         this.length += 1;
-//        _end = System.currentTimeMillis();
-//        System.out.println("Insert lasted:  " + getExecuteTime());
         return true;
     }
 
@@ -251,18 +227,13 @@ public class SimpleList<K> implements ListInterface<K>, Iterable<K> {
     
 
     public int deleteHead() {
-//    	_start = System.currentTimeMillis();
     	SimpleListNode<K> node = this.head;
     	this.head = this.head.getNext();
-//    	_end = System.currentTimeMillis();
-//    	System.out.println("DeleteHead lasted:  " + getExecuteTime());
         return (Integer) node.getElem();
     }
 
     @Override
     public boolean delete(){
-//    	_start = System.currentTimeMillis();
-        //Set tmp list
         SimpleListNode<K> node = this.head.getNext();
         
         //Destroy
@@ -270,15 +241,13 @@ public class SimpleList<K> implements ListInterface<K>, Iterable<K> {
         
         //Set new list
         this.head = node;
-//        _end = System.currentTimeMillis();
-//        System.out.println("Delete lasted:  " + getExecuteTime());
+
         return true;
 
 
     }
 	@Override
 	public K cut() {
-		// TODO Auto-generated method stub
                 if (this.length == 1 ){
                     K tmp = this.head.getElem();
                     this.head = null;
@@ -303,10 +272,6 @@ public class SimpleList<K> implements ListInterface<K>, Iterable<K> {
         public K getTailData(){
             return this.tail.getElem();
         }
-//	@Override
-//	public double getExecuteTime() {
-//		double executeTime = this._end - this._start;
-//		return executeTime;
-//	}
+
 }
 
