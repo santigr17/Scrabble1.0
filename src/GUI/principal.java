@@ -16,7 +16,7 @@ public class principal {
     public static void vent()
     {JFrame principal=new JFrame("Scrabble");
     principal.setSize(1200,700);
-    principal.setVisible(true);
+    principal.setVisible(true);//Visible
     principal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
   }   
 }
