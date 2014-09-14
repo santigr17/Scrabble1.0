@@ -1,3 +1,5 @@
+package LeerArchivos;
+
 import static constants.Constants.DICTIONARY_PATH;
 import java.io.BufferedReader;
 import java.io.File;

@@ -12,11 +12,19 @@ import javax.swing.JFrame;
  *
  * @author emily
  */
-public class principal {
-    public static void vent()
-    {JFrame principal=new JFrame("Scrabble");
-    principal.setSize(1200,700);
-    principal.setVisible(true);//Visible
-    principal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-  }   
+public class principal extends JFrame {
+    private fondo F=new fondo();
+        public void  ventana(){
+            this.setLayout(null);
+            this.setTitle("Scrabble");
+            this.setBounds(10,10,1200,600);
+            this.setLocationRelativeTo(null);
+            this.setVisible(true);
+            this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            
+            this.add(F);
+            F.Fondo();
+            
+            
+        }
 }

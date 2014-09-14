@@ -20,7 +20,7 @@ public class main
     public static void main(String[] args) 
     {   
         principal p=new principal();
-        p.vent();
+        p.ventana();
         MatrizTablero x=new MatrizTablero();
         x.madematriz();
 }
