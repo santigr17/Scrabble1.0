@@ -3,11 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package wordScore;
-
-import Listas.simplelist.SimpleList;
-
+import ListasSimples.ListaSimple;
 /**
  *
  * @author edr2394
@@ -26,13 +23,13 @@ public class WordScore
         return addScores(scoreCalc(wordToCharList(this.word)));
     }
     
-    private SimpleList<Character> wordToCharList(String pWord){
-        SimpleList <Character> charList = new SimpleList(); 
+    private ListaSimple<Character> wordToCharList(String pWord){
+        ListaSimple <Character> charList = new ListaSimple(); 
         try 
         {
             for (int i  = 0  ; i < pWord.length() ; i ++)
             {
-                charList.append(pWord.charAt(i));
+                charList.agregar(pWord.charAt(i));
             }
             return charList;
         }
@@ -42,15 +39,15 @@ public class WordScore
         }
     }
     
-    private SimpleList<Integer> scoreCalc(SimpleList<Character> pCharList)
+    private ListaSimple<Integer> scoreCalc(ListaSimple<Character> pCharList)
     {
-        SimpleList <Character> tmpString = pCharList;
-        SimpleList <Integer> scores = new SimpleList();
-        while (tmpString.length() != 0){
+        ListaSimple <Character> tmpString = pCharList;
+        ListaSimple <Integer> scores = new ListaSimple();
+        while (tmpString.tamaño() != 0){
             //try{
              
                 
-                String tmp = tmpString.getTailData().toString();
+                String tmp = tmpString.cola().toString();
                 if (tmp.equals("a")| 
                        tmp.equals("e") |
                         tmp.equals("i") |
@@ -62,19 +59,19 @@ public class WordScore
                         tmp.equals("t") |
                         tmp.equals("s"))
                 {
-                    scores.append(1);
+                    scores.agregar(1);
                 }
                 else if (tmp.equals("d") |
                          tmp.equals("g"))
                 {
-                    scores.append(2);
+                    scores.agregar(2);
                 }
                 else if(tmp.equals("b")|
                         tmp.equals("c")|
                         tmp.equals("m")|
                         tmp.equals("p"))
                 {
-                    scores.append(3);
+                    scores.agregar(3);
                 }
                 else if(tmp.equals("f")|
                         tmp.equals("h")|
@@ -82,40 +79,38 @@ public class WordScore
                         tmp.equals("w")|
                         tmp.equals("y"))
                 {
-                    scores.append(4);
+                    scores.agregar(4);
                 }
                 else if(tmp.equals("k"))
                 {
-                    scores.append(5);
+                    scores.agregar(5);
                 }
                 else if(tmp.equals("j")|
                         tmp.equals("x"))
                 {
-                    scores.append(8);
+                    scores.agregar(8);
                 }
                 else if(tmp.equals("q")|
                         tmp.equals("z"))
                 {
-                    scores.append(10);
+                    scores.agregar(10);
                 }
                 else
                 {
                     System.out.println("Invalid word");
                 }
-                tmpString.cut();
-                System.out.println(scores.describe());
+                tmpString.cortar();
         }
         return scores;
     }
-    private int addScores(SimpleList<Integer> pScores)
+    private int addScores(ListaSimple<Integer> pScores)
     { 
         int tmp = 0;
-        while (pScores.length() != 0)
+        while (pScores.tamaño() != 0)
         {
-            int tmp2 = pScores.getTailData();
-            System.out.println(tmp2);
+            int tmp2 = pScores.cola();
             tmp += tmp2;            
-            tmp2 = pScores.cut();
+            tmp2 = pScores.cortar();
         }
         return tmp;
     }
