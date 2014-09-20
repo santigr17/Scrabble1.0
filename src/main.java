@@ -24,6 +24,7 @@ public class main
     public static void main(String[] args) 
     {
         jugador jugador1=new jugador();
+        jugador1.rellenarAtril();
         jugador1.mostrar();
         
         //bolsa B=new bolsa();
@@ -33,8 +34,8 @@ public class main
         
         //Coords punto = new Coords();
         //punto.getCoord();
-        principal P=new principal();
-        P.pintar();
+       // principal P=new principal();
+       // P.pintar();
         //MatrizTablero x=new MatrizTablero();
         //x.madematriz();
         //ValidacionPts val = new ValidacionPts();

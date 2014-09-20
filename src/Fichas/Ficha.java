@@ -7,7 +7,7 @@ package Fichas;
  */
 
 public class Ficha {
-    int valor=
+    
     
     
 }

@@ -49,15 +49,12 @@ public class bolsa {
     
    
     public void Sacar(int N)
-        {B[N]=B[N]-1;
-        
-        if (1>B[N]) 
-        {JOptionPane.showMessageDialog(null,"Ya no tenemos esa ficha, prueba otra");
-                }
-        
-        this.mostrar();
-        
-        
+        {
+            if(B[N]>0) 
+            {
+               B[N]=B[N]-1; 
+            }
+            
         }
     
 }
