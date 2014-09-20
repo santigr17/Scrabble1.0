@@ -5,10 +5,9 @@ import GUI.random;
 import ListasSimples.ListaSimple;
 import ListasSimples.NodoListaSimple;
 
-
-public class jugador<E>
+public class jugador
 {
-    ListaSimple Atril=new ListaSimple();
+    ListaSimple<Integer> Atril=new ListaSimple<Integer>();
     boolean Turno=false;
     int Puntaje=0; 
     int PrimerFicha=0;
@@ -28,33 +27,42 @@ public class jugador<E>
         SigJugador=jugador;
         
     }
-    public void tomarPrimerFicha()
-    {
-        //Ficha PrimerFicha=new Ficha();       
-        
-    }
     public void rellenarAtril()
     {
-        if(Atril.tamaño()==0)
-             for(Object temp=Atril.getcabeza();temp!=Atril.cola();Atril.)
+        B.bolsa();
+        NodoListaSimple<Integer> temp = Atril.getcabeza();
+        for (int i=0;i<7;i++)
+        {
+            int S=R.random();
+            Atril.agregar(S);
+            B.Sacar(S);
+        }
+        Atril.describir();
+        B.mostrar();
+       /** if(Atril.tamaño()==0)
+        {
+            NodoListaSimple<Integer> temp=null;
+        }
+        else
+        {
+            for(int i=0;i<7;i++)
             {
-                if (temp==null)
+                System.out.println(temp);
                 {
                     
-                }                         
+                }
+                       if(temp==null)
+            {
+               temp.setelement(R.random());
+               temp.getNext();
             }
-        }
-    }
+           
+            
+        }*/
+    } 
     public void mostrar()
     {
-        for(int i=0;i<7;i++)
-        {
-            System.out.println(Atril[i]);
-        }
-        B.mostrar();
+        Atril.describir();
     }
-            
-
-    
-    
 }
+    
