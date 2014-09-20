@@ -1,7 +1,8 @@
+import Fichas.bolsa;
 import GUI.*;
 import LeerArchivos.*;
-import Matrices.*;
 import LeerArchivos.ValidacionPts;
+import Matrices.*;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -20,13 +21,19 @@ public class main
      */
     public static void main(String[] args) 
     {
-        Coords punto = new Coords();
-        punto.getCoord();
+        
+        //bolsa B=new bolsa();
+        //B.bolsa();
+        //B.mostrar();
+        //B.Sacar(2);
+        
+        //Coords punto = new Coords();
+        //punto.getCoord();
         principal P=new principal();
         P.pintar();
-        MatrizTablero x=new MatrizTablero();
-        x.madematriz();
-        ValidacionPts val = new ValidacionPts();
+        //MatrizTablero x=new MatrizTablero();
+        //x.madematriz();
+        //ValidacionPts val = new ValidacionPts();
     }
 }
 
