@@ -13,6 +13,7 @@ package GUI;
 public class principal extends javax.swing.JFrame {
     public principal() {
         initComponents();
+        this.setLocationRelativeTo(this);
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -49,12 +50,9 @@ public class principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     private void playActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playActionPerformed
        GameArea GA=new GameArea();
-       GA.pintar();
-    }//GEN-LAST:event_playActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
+       GA.main();
+       this.setVisible(false);
+    }
     public static void pintar() {
      
         java.awt.EventQueue.invokeLater(new Runnable() {
