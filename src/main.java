@@ -7,26 +7,28 @@ import LeerArchivos.ValidacionPts;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author edr2394
  */
 public class main 
 {
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) 
     {
-        Coords punto = new Coords();
-        punto.getCoord();
-        principal P=new principal();
-        P.pintar();
+        
+        /**Coords punto = new Coords();
+        *punto.getCoord();
+        *principal P=new principal();
+        *P.pintar();
         MatrizTablero x=new MatrizTablero();
         x.madematriz();
-        ValidacionPts val = new ValidacionPts();
+        *ValidacionPts val = new ValidacionPts();
+        *Matrizlogica matriz = new Matrizlogica();
+        *matriz.crearMatrizlogica(15);
+        *matriz.setdato(1,2, 123);
+        */
     }
 }
-
