@@ -49,5 +49,8 @@ public class main
         //MatrizTablero x=new MatrizTablero();
         //x.madematriz();
         //ValidacionPts val = new ValidacionPts();
+        Matrizlogica matriz = new Matrizlogica();
+        matriz.crearMatrizlogica(15);
+        matriz.setdato(0,9, 123);
     }
 }
