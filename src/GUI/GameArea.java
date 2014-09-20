@@ -52,14 +52,13 @@ public class GameArea extends javax.swing.JFrame {
     private void bolsaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bolsaActionPerformed
         random R=new random();
         R.random();
+       
     }//GEN-LAST:event_bolsaActionPerformed
 
     public void pintar() {
-        
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new GameArea().setVisible(true);
-            }
+       
+        java.awt.EventQueue.invokeLater(() -> {
+            new GameArea().setVisible(true);
         });
     }
 
