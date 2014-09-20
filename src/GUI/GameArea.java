@@ -6,18 +6,22 @@
 
 package GUI;
 
+import Fichas.bolsa;
+
 /**
  *
  * @author emily
  */
 public class GameArea extends javax.swing.JFrame {
 
-    
+    bolsa B=new bolsa();
+   
     public GameArea() {
         initComponents();
+        this.setLocationRelativeTo(this);
+        B.bolsa();
     }
-
-    @SuppressWarnings("unchecked")
+   
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -48,17 +52,18 @@ public class GameArea extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void bolsaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bolsaActionPerformed
+    
+    private void bolsaActionPerformed(java.awt.event.ActionEvent evt) {
         random R=new random();
-        R.random();
-       
-    }//GEN-LAST:event_bolsaActionPerformed
+        B.Sacar(R.random());
+        
+    }
 
-    public void pintar() {
-       
-        java.awt.EventQueue.invokeLater(() -> {
+    public void main() {
+            java.awt.EventQueue.invokeLater(() -> {
             new GameArea().setVisible(true);
+          
+            
         });
     }
 

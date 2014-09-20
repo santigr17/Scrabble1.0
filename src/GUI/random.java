@@ -8,8 +8,9 @@ import java.util.Random;
  */
 
 public class random {
-int R=(int) Math.floor(Math.random()*27+1);
-    public void random(){
+int R=(int) Math.floor(Math.random()*26+1);
+    public int random(){   
     System.out.println(R);
+    return R;
     }
 }

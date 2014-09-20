@@ -1,9 +1,8 @@
 
 package GUI;
 
-import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
+import javax.swing.JLabel;
 
 
 /**
@@ -13,10 +12,9 @@ import java.awt.Graphics2D;
 
 
 public class pintar {
-    public void paint(Graphics g)
-        {Graphics2D G= (Graphics2D)g;
-        G.setColor(Color.black);
-        G.fillOval(50, 50, 30, 30);
-
+    private JLabel L;
+    String Letras[]={};
+    public void paint()
+        {
         }
 }
