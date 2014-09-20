@@ -22,7 +22,7 @@ public class main
     public static void main(String[] args) 
     {
         
-        /**Coords punto = new Coords();
+        /*Coords punto = new Coords();
         *punto.getCoord();
         *principal P=new principal();
         *P.pintar();
@@ -32,15 +32,15 @@ public class main
         *Matrizlogica matriz = new Matrizlogica();
         *matriz.crearMatrizlogica(15);
         *matriz.setdato(1,2, 123);
-        *
-        *jugador jugador1=new jugador();
-        *jugador1.rellenarAtril();
-        *jugador1.mostrar();
         */
+        jugador jugador1=new jugador();
+        jugador1.rellenarAtril();
+        
+        /*
         bolsa B=new bolsa();
         B.bolsa();
         B.Sacar(1);
-        B.mostrar();
+        B.mostrar();*/
         
         //Coords punto = new Coords();
         //punto.getCoord();

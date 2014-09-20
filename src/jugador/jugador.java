@@ -2,11 +2,12 @@
 package jugador;
 import Fichas.bolsa;
 import GUI.random;
-
+import ListasSimples.ListaSimple;
+import ListasSimples.NodoListaSimple;
 
 public class jugador
 {
-    int Atril[]=new int[7];
+    ListaSimple<Integer> Atril=new ListaSimple<Integer>();
     boolean Turno=false;
     int Puntaje=0; 
     int PrimerFicha=0;
@@ -26,40 +27,42 @@ public class jugador
         SigJugador=jugador;
         
     }
-    public void tomarPrimerFicha()
-    {
-        //Ficha PrimerFicha=new Ficha();       
-        
-    }
     public void rellenarAtril()
-    {   
-        B.bolsa();             
-        for(int i=0;i<7;i++)
-           { 
-               if (Atril[i]==0)
-               {
-                   Atril[i]=R.random();
-                   B.Sacar(Atril[i]);
-               }
-               
-           }
+    {
+        B.bolsa();
+        NodoListaSimple<Integer> temp = Atril.getcabeza();
+        for (int i=0;i<7;i++)
+        {
+            int S=R.random();
+            Atril.agregar(S);
+            B.Sacar(S);
+        }
+        Atril.describir();
+        B.mostrar();
+       /** if(Atril.tamaño()==0)
+        {
+            NodoListaSimple<Integer> temp=null;
+        }
+        else
+        {
+            for(int i=0;i<7;i++)
+            {
+                System.out.println(temp);
+                {
+                    
+                }
+                       if(temp==null)
+            {
+               temp.setelement(R.random());
+               temp.getNext();
+            }
            
-     }
-            Object Letra= null;//new Ficha.getFicha();
-          //  NodoListaSimple<Letra> L_Disponibles = NodoListaSimple<Letra>;
-            //Atril.agregar();
-       // }
-    
+            
+        }*/
+    } 
     public void mostrar()
     {
-        for(int i=0;i<7;i++)
-        {
-            System.out.println(Atril[i]);
-        }
-        B.mostrar();
+        Atril.describir();
     }
-            
-
-    
-    
 }
+    

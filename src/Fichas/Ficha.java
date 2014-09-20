@@ -6,8 +6,9 @@ import javax.swing.JLabel;
 
 /**
  *
- * @author emily
+ * @author Santi
  */
+
 
 public class Ficha {
     private JLabel L;
@@ -22,9 +23,6 @@ public class Ficha {
      L.add(L);
     }
     
-    public void aparecer()
-    {
-        
-    }
-    
 }
+        
+
