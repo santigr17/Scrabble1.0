@@ -46,6 +46,7 @@ public class bolsa {
     public void mostrar()
         {for (int i=0;i<27;i++)
             System.out.print(B[i]+" ");}
+    
    
     public void Sacar(int N)
         {B[N]=B[N]-1;

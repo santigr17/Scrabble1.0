@@ -3,6 +3,8 @@ import GUI.*;
 import LeerArchivos.*;
 import LeerArchivos.ValidacionPts;
 import Matrices.*;
+import jugador.*;
+        
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -21,6 +23,8 @@ public class main
      */
     public static void main(String[] args) 
     {
+        jugador jugador1=new jugador();
+        jugador1.mostrar();
         
         //bolsa B=new bolsa();
         //B.bolsa();
