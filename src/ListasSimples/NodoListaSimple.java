@@ -1,7 +1,4 @@
 package ListasSimples;
-
-
-
 public class NodoListaSimple<E> 
 {
     
@@ -25,7 +22,10 @@ public class NodoListaSimple<E>
         return this.siguiente;
     }
     
-    public E getElem() {
+    public void setelement(E pelemento){
+        this.elem = pelemento;
+    }
+    public E getelem() {
         return this.elem;
     }
 }

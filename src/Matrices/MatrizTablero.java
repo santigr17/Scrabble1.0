@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Matrices;
 import static constants.Constants.*;
 import java.awt.*;
@@ -14,12 +9,12 @@ import javax.swing.*;
  */
 public class MatrizTablero 
 {
+    int Matriz [][] = new int [15][15];
     public void madematriz()
     {
-        int Matriz [][] = new int [15][15];
-        for(int i=0;i<=14;i++)
+        for(int f=0;f<15;f++)
         {
-            for(int j=0;j<=14;j++)
+            for(int c=0;c<15;c++)   
             {
                 Matriz[7][7] = centro;
                 Matriz[0][0] = palabrax3;
@@ -77,23 +72,19 @@ public class MatrizTablero
                 Matriz[8][12] = letrax2;
                 Matriz[11][0] = letrax2;
                 Matriz[11][7] = letrax2;
-                Matriz[11][13] = letrax2;
+                Matriz[11][14] = letrax2;
                 Matriz[12][6] = letrax2;
                 Matriz[12][8] = letrax2;
                 Matriz[14][3] = letrax2;
                 Matriz[14][11] = letrax2;
-                Matriz[i][j]= simple;
-                
+                Matriz[f][c]= simple;
             }
         }
-        System.out.println("\n Matriz 15 x 15 \n");
-        for(int i=0;i<=14;i++)
+        for(int f=0;f<=14;f++)
         {
-            for(int j=0;j<=14;j++)
-                
-                System.out.print(Matriz[i][j] + "\t");
+            for(int c=0;c<=14;c++)
+                System.out.print(Matriz[f][c] + "\t");
                 System.out.println();
-            
         }
     }
     

@@ -49,7 +49,7 @@ public class ListaSimple<E> implements InterfazLista<E>
         NodoListaSimple<E> nodoactual = this.head;
         while(nodoactual != null) 
         {
-            if(nodoactual.getElem().equals(pelemento)) 
+            if(nodoactual.getelem().equals(pelemento)) 
             {
                 break;
             }
@@ -93,7 +93,7 @@ public class ListaSimple<E> implements InterfazLista<E>
     {
         NodoListaSimple<E> nodoactual = this.head;
         while (nodoactual.getNext() != null)
-            if (nodoactual.getElem() == pelemento)
+            if (nodoactual.getelem() == pelemento)
             {
                 return true;
             }
@@ -159,15 +159,15 @@ public class ListaSimple<E> implements InterfazLista<E>
         NodoListaSimple<E> nodoactual = this.head;
         while(nodoactual.getNext()!= null)
         {
-            System.out.print(nodoactual.getElem());
+            System.out.print(nodoactual.getelem());
             System.out.print(" ");
             nodoactual = nodoactual.getNext();
         }
-        System.out.println(nodoactual.getElem());
+        System.out.println(nodoactual.getelem());
         System.out.print("Cabeza: ");
-        System.out.println(this.head.getElem());
+        System.out.println(this.head.getelem());
         System.out.print("Cola: ");
-        System.out.println(this.tail.getElem());
+        System.out.println(this.tail.getelem());
         System.out.print("Tamaño: ");
         System.out.println(this.length); 
     }
@@ -176,7 +176,7 @@ public class ListaSimple<E> implements InterfazLista<E>
     {
         if (this.length == 1)
         {
-            E temporal = this.head.getElem();
+            E temporal = this.head.getelem();
             this.head = null;
             this.length-= 1;
             return temporal;
@@ -191,12 +191,15 @@ public class ListaSimple<E> implements InterfazLista<E>
             this.tail = nodoactual;
             nodoactual.setNext(null);
             this.length -= 1;
-            return nodoactual.getElem();
+            return nodoactual.getelem();
         }
     }
     public E cola()
     {
-        return this.tail.getElem();
+        return this.tail.getelem();
     }
-    
+    public NodoListaSimple<E> getcabeza()
+    {
+        return this.head;
+    }
 }

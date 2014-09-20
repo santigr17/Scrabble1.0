@@ -2,11 +2,13 @@
 package jugador;
 import Fichas.bolsa;
 import GUI.random;
+import ListasSimples.ListaSimple;
+import ListasSimples.NodoListaSimple;
 
 
-public class jugador
+public class jugador<E>
 {
-    int Atril[]=new int[7];
+    ListaSimple Atril=new ListaSimple();
     boolean Turno=false;
     int Puntaje=0; 
     int PrimerFicha=0;
@@ -32,24 +34,21 @@ public class jugador
         
     }
     public void rellenarAtril()
-    {   B.bolsa();
-               
-       for(int i=0;i<7;i++)
-           { 
-               if (Atril[i]==0)
-               {
-                   Atril[i]=R.random();
-                   B.Sacar(Atril[i]);
-               }
-               
-           }
-           
-     }
-            Object Letra= null;//new Ficha.getFicha();
-          //  NodoListaSimple<Letra> L_Disponibles = NodoListaSimple<Letra>;
-            //Atril.agregar();
-       // }
-    
+    {
+        if(Atril.tamaño()==0)
+        {
+          while()  
+        }
+        else{
+            for(Object temp=Atril.cabeza();temp!=Atril.cola();temp.getnext())
+            {
+                if (temp==null)
+                {
+                    
+                }                         
+            }
+        }
+    }
     public void mostrar()
     {
         for(int i=0;i<7;i++)
