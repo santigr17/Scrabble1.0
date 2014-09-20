@@ -36,11 +36,7 @@ public class jugador<E>
     public void rellenarAtril()
     {
         if(Atril.tamaño()==0)
-        {
-          while()  
-        }
-        else{
-            for(Object temp=Atril.cabeza();temp!=Atril.cola();temp.getnext())
+             for(Object temp=Atril.getcabeza();temp!=Atril.cola();Atril.)
             {
                 if (temp==null)
                 {
