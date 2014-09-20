@@ -37,10 +37,10 @@ public class main
         *jugador1.rellenarAtril();
         *jugador1.mostrar();
         */
-        //bolsa B=new bolsa();
-        //B.bolsa();
-        //B.mostrar();
-        //B.Sacar(2);
+        bolsa B=new bolsa();
+        B.bolsa();
+        B.Sacar(1);
+        B.mostrar();
         
         //Coords punto = new Coords();
         //punto.getCoord();
@@ -49,8 +49,8 @@ public class main
         //MatrizTablero x=new MatrizTablero();
         //x.madematriz();
         //ValidacionPts val = new ValidacionPts();
-        Matrizlogica matriz = new Matrizlogica();
+       /* Matrizlogica matriz = new Matrizlogica();
         matriz.crearMatrizlogica(15);
-        matriz.setdato(0,9, 123);
+        matriz.setdato(0,9, 123);*/
     }
 }

@@ -32,9 +32,9 @@ public class jugador
         
     }
     public void rellenarAtril()
-    {   B.bolsa();
-               
-       for(int i=0;i<7;i++)
+    {   
+        B.bolsa();             
+        for(int i=0;i<7;i++)
            { 
                if (Atril[i]==0)
                {
