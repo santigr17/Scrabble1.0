@@ -31,38 +31,33 @@ public class jugador
     {
         B.bolsa();
         NodoListaSimple<Integer> temp = Atril.getcabeza();
-        for (int i=0;i<7;i++)
+        if(Atril.tamaño()==0)
         {
-            int S=R.random();
-            Atril.agregar(S);
-            B.Sacar(S);
+            while (Atril.tamaño()<7)
+            {
+                int S1=R.random();
+                Atril.agregar(S1);
+                B.Sacar(S1);
+            }
         }
+       /* else
+        {
+            while(Atril.tamaño()<7)            
+            {
+                if()
+                int S2=R.random();
+                Atril.agregar(S2);
+                B.Sacar(S2);
+            }
+        }*/
+        System.out.print(temp);
         Atril.describir();
         B.mostrar();
-       /** if(Atril.tamaño()==0)
-        {
-            NodoListaSimple<Integer> temp=null;
-        }
-        else
-        {
-            for(int i=0;i<7;i++)
-            {
-                System.out.println(temp);
-                {
-                    
-                }
-                       if(temp==null)
-            {
-               temp.setelement(R.random());
-               temp.getNext();
-            }
-           
-            
-        }*/
     } 
     public void mostrar()
     {
         Atril.describir();
     }
+    
 }
     
