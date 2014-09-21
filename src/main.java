@@ -4,16 +4,6 @@ import LeerArchivos.*;
 import LeerArchivos.ValidacionPts;
 import Matrices.*;
 import jugador.*;
-        
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author edr2394
- */
 public class main 
 {
     /**
@@ -49,8 +39,13 @@ public class main
         //MatrizTablero x=new MatrizTablero();
         //x.madematriz();
         //ValidacionPts val = new ValidacionPts();
+
+        Matrelleno matriz2 = new Matrelleno();
+        matriz2.rellenar();
+
        /* Matrizlogica matriz = new Matrizlogica();
         matriz.crearMatrizlogica(15);
         matriz.setdato(0,9, 123);*/
+
     }
 }
