@@ -10,23 +10,31 @@ public class jugador
     ListaSimple<Integer> Atril=new ListaSimple<Integer>();
     boolean Turno=false;
     int Puntaje=0; 
-    int PrimerFicha=0;
-    Object SigJugador=null;
          
     random R=new random();      
     bolsa B=new bolsa();
     
-    public void TerminarTurno()
-    {
-        this.Turno=false;
-                
-        
+  
+    public Integer getPuntaje(){
+        return this.Puntaje;
     }
-    public void setSiguiente(Object jugador)
-    {
-        SigJugador=jugador;
-        
+    public boolean getTurno(){
+        return this.Turno;
+    } 
+    public ListaSimple<Integer> getAtril()    {
+        return this.Atril;
     }
+
+    public void setPuntaje(int Puntos){
+        this.Puntaje=Puntos;
+    }
+    public void setTurno(boolean turno){
+        this.Turno=turno;           
+    }
+    public void setAtril(ListaSimple atril){
+        this.Atril=atril;
+    }
+   
     public void rellenarAtril()
     {
         B.bolsa();
@@ -73,8 +81,10 @@ public class jugador
                        
         }
         Atril.eliminar(Compara);
-        }
-    
+        this.rellenarAtril();
     }
+                
+}
+
 
     

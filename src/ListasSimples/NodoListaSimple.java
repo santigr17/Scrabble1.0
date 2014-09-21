@@ -5,6 +5,9 @@ public class NodoListaSimple<E>
     protected E elem;
     protected NodoListaSimple<E> siguiente;
     
+    boolean ocupado=false;
+    String letra="";
+    
     public NodoListaSimple(E elemento) {
         this.elem = elemento;
         this.siguiente = null;
@@ -28,4 +31,23 @@ public class NodoListaSimple<E>
     public E getelem() {
         return this.elem;
     }
+    public boolean getocupado(){
+        return this.ocupado;
+    }
+    public void setocupado(boolean estado){
+        if(estado==true){
+            this.ocupado=true;
+        }
+        else{
+            this.ocupado=false;
+        }
+    }
+    public String getLetra() {
+        return letra;
+    }
+    public void setLetra(String Letra){
+        this.letra=Letra; 
+    }
+    
+           
 }
