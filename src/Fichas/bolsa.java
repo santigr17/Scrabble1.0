@@ -50,7 +50,10 @@ public class bolsa <E>
             Bolsa.describir();
         }
     
-   
+    public void vacio()
+        {
+                
+        }
     public void Sacar(int N)
         {
             NodoListaSimple<Integer> temp = Bolsa.getcabeza();
@@ -58,8 +61,14 @@ public class bolsa <E>
             {
                 temp = temp.getNext();
             }
-            temp.setelement(temp.getelem()-1);
-            
+            if(temp.getelem()>0)
+                {
+                temp.setelement(temp.getelem()-1);
+                }
+            else
+                {
+                temp.getNext().setelement(temp.getelem()-1);
+                }
         }
     
 }

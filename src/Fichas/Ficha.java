@@ -1,36 +1,28 @@
 
 package Fichas;
 
+import java.io.IOException;
+import javax.swing.JLabel;
+
 /**
  *
  * @author Santi
  */
 
-public class Ficha
-{
-    int valorPunto=0;
-    String valorLetra="";
-    int numFichas=0;
+
+public class Ficha {
+    private JLabel L;
+    String Letras[]={"/imagenes.Fichas/a.jpg","/imagenes.Fichas/b.jpg",
+        "/imagenes.Fichas/c.jpg","/imagenes.Fichas/d.jpg","/imagenes.Fichas/e.jpg"};
     
-    public Ficha(int puntos, int fichas,String letra)
+    public void pintar() throws IOException
     {
-        int valorPunto=puntos;
-        String valorLetra=letra;
-        int numFichas=fichas;
-    }
-    public void UsarFicha(int menos)
-    {
-        int temp=numFichas-menos;
-        int numFichas=temp;
+     L=new JLabel("Fuck you"); 
+     L.setLayout(null);
+     L.setBounds(10,20,100,100);
+     L.add(L);
     }
     
-    public int getPunto()
-    {
-        return this.valorPunto;
-    }
-    public String getLetra()
-    {
-        return this.valorLetra;
-    }
-         
 }
+        
+
