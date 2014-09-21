@@ -1,5 +1,6 @@
 package Matrices;
 import ListasSimples.*;
+import static constants.Constants.*;
 /**
  *
  * @author edr2394
@@ -7,9 +8,15 @@ import ListasSimples.*;
 public class Matrizlogica
 {
     private ListaSimple<ListaSimple<Integer>> Matriz;
+    
+    
+    
     public Matrizlogica(){
         Matriz= new ListaSimple<ListaSimple<Integer>> ();
     }
+    
+    
+    
     public void crearMatrizlogica(int i)
     {
         int x = 0;
@@ -27,6 +34,9 @@ public class Matrizlogica
             x++;
         } 
     }
+    
+    
+    
     public void setdato(int f,int c,int pnum)
     {
         NodoListaSimple<ListaSimple<Integer>> temp = Matriz.getcabeza();
@@ -40,30 +50,29 @@ public class Matrizlogica
             cabezalistatemp = cabezalistatemp.getNext();
         }
         cabezalistatemp.setelement(pnum);
-        cabezalistatemp.getelem();
         temp.getelem().describir();
-        /**NodoListaSimple<ListaSimple<E>> temp = Matriz.getcabeza();
-        *for(int x = 0;x<i;x++)
-        *{
-        *    temp= temp.getNext();
-        *}           
-        *
-        *NodoListaSimple<E> cabezalistaTemp = temp.getelem().getcabeza();
-        *for (int y=0;y<j;j++)
-        *{
-        *        cabezalistaTemp = cabezalistaTemp.getNext();
-        *}
-        *cabezalistaTemp.setelement(pelem);
-        *Matriz.getcabeza().getelem().describir();
-        *if (cabezalistaTemp.getelem() != null)
-        *{
-        *    return false;
-        *}
-        *cabezalistaTemp.setelement(pelem);
-        *Matriz.getcabeza().getelem().describir();
-        *return true;
-        */
-
+    }
+    
+    
+    public void rellenar()
+    {
+        NodoListaSimple<ListaSimple<Integer>> temp = Matriz.getcabeza();
+        int cantidad = 15;
+        for (int x=0;x < cantidad;x++)
+        {
+            temp = temp.getNext();
+            NodoListaSimple esp =temp.getelem().getcabeza();
+            for(int y=0;y < cantidad;y++)
+            {
+                if ((x==0 && y==0)||(x==0 && y==7)||(x==0 && y==14))
+                {
+                
+                esp.setelement(palabrax3);
+                }
+                
+            }
+            temp.getelem().describir();
+        }
     }
 }
     
