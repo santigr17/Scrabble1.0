@@ -16,7 +16,6 @@ public class Matrizlogica
     }
     
     
-    
     public void crearMatrizlogica(int i)
     {
         int x = 0;
@@ -50,29 +49,23 @@ public class Matrizlogica
             cabezalistatemp = cabezalistatemp.getNext();
         }
         cabezalistatemp.setelement(pnum);
-        temp.getelem().describir();
     }
     
     
-    public void rellenar()
+    public void getcabeza()
     {
-        NodoListaSimple<ListaSimple<Integer>> temp = Matriz.getcabeza();
-        int cantidad = 15;
-        for (int x=0;x < cantidad;x++)
+        this.Matriz.getcabeza();
+    }
+    
+    public void mostrarmatriz(int fc)
+    {
+        NodoListaSimple<ListaSimple<Integer>> temp = this.Matriz.getcabeza();
+        for (int x=0;x < fc;x++)
         {
-            temp = temp.getNext();
-            NodoListaSimple esp =temp.getelem().getcabeza();
-            for(int y=0;y < cantidad;y++)
-            {
-                if ((x==0 && y==0)||(x==0 && y==7)||(x==0 && y==14))
-                {
-                
-                esp.setelement(palabrax3);
-                }
-                
-            }
-            temp.getelem().describir();
+           temp.getelem().describir();
+           temp = temp.getNext();
         }
     }
+    
 }
     

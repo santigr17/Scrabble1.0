@@ -4,15 +4,8 @@ package Fichas;
 import ListasSimples.*;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author emily
- */
-
-
 public class bolsa <E>
-{
-    
+{  
     ListaSimple<Integer> Bolsa=new ListaSimple<Integer>();
     
     public void bolsa()

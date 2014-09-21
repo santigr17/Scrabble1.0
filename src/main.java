@@ -11,41 +11,19 @@ public class main
      */
     public static void main(String[] args) 
     {
-        
-        /*Coords punto = new Coords();
-        *punto.getCoord();
-        *principal P=new principal();
-        *P.pintar();
-        MatrizTablero x=new MatrizTablero();
-        x.madematriz();
-        *ValidacionPts val = new ValidacionPts();
-        *Matrizlogica matriz = new Matrizlogica();
-        *matriz.crearMatrizlogica(15);
-        *matriz.setdato(1,2, 123);
-        */
+        Matrelleno matriz2 = new Matrelleno();
+        matriz2.rellenar();
+        /**Coords punto = new Coords();
+        punto.getCoord();
+        principal P=new principal();
+        P.pintar();
+        ValidacionPts val = new ValidacionPts();
         jugador jugador1=new jugador();
         jugador1.rellenarAtril();
-        
-        /*
         bolsa B=new bolsa();
         B.bolsa();
         B.Sacar(1);
-        B.mostrar();*/
-        
-        //Coords punto = new Coords();
-        //punto.getCoord();
-       // principal P=new principal();
-       // P.pintar();
-        //MatrizTablero x=new MatrizTablero();
-        //x.madematriz();
-        //ValidacionPts val = new ValidacionPts();
-
-        Matrelleno matriz2 = new Matrelleno();
-        matriz2.rellenar();
-
-       /* Matrizlogica matriz = new Matrizlogica();
-        matriz.crearMatrizlogica(15);
-        matriz.setdato(0,9, 123);*/
+        B.mostrar();*/  
 
     }
 }

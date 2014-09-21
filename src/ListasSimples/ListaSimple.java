@@ -164,12 +164,12 @@ public class ListaSimple<E> implements InterfazLista<E>
             nodoactual = nodoactual.getNext();
         }
         System.out.println(nodoactual.getelem());
-        System.out.print("Cabeza: ");
-        System.out.println(this.head.getelem());
-        System.out.print("Cola: ");
-        System.out.println(this.tail.getelem());
-        System.out.print("Tamaño: ");
-        System.out.println(this.length); 
+        //System.out.print("Cabeza: ");
+        //System.out.println(this.head.getelem());
+        //System.out.print("Cola: ");
+        //System.out.println(this.tail.getelem());
+        //System.out.print("Tamaño: ");
+        //System.out.println(this.length); 
     }
     
     public E cortar ()
