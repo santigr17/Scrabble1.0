@@ -40,16 +40,19 @@ public class jugador
                 B.Sacar(S1);
             }
         }
-       /* else
+        else
         {
             while(Atril.tamaño()<7)            
             {
-                if()
-                int S2=R.random();
-                Atril.agregar(S2);
-                B.Sacar(S2);
+                if(temp==null)
+                {
+                    int S2=R.random();
+                    Atril.agregar(S2);
+                    B.Sacar(S2);
+                }
+                temp=temp.getNext();
             }
-        }*/
+        }
         System.out.print(temp);
         Atril.describir();
         B.mostrar();
@@ -58,6 +61,20 @@ public class jugador
     {
         Atril.describir();
     }
+    public void usarFicha(int ficha)
+    {
+        int Compara=Atril.getcabeza().getelem();
+        NodoListaSimple temp=Atril.getcabeza();
+       
+        while(Compara!=ficha)
+        {
+            Compara=(int) temp.getNext().getelem();
+            temp=temp.getNext();
+                       
+        }
+        Atril.eliminar(Compara);
+        }
     
-}
+    }
+
     
