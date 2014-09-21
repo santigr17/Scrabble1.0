@@ -12,7 +12,7 @@ public class main
     public static void main(String[] args) 
     {
         
-        /**Coords punto = new Coords();
+        /*Coords punto = new Coords();
         *punto.getCoord();
         *principal P=new principal();
         *P.pintar();
@@ -22,15 +22,15 @@ public class main
         *Matrizlogica matriz = new Matrizlogica();
         *matriz.crearMatrizlogica(15);
         *matriz.setdato(1,2, 123);
-        *
-        *jugador jugador1=new jugador();
-        *jugador1.rellenarAtril();
-        *jugador1.mostrar();
         */
-        //bolsa B=new bolsa();
-        //B.bolsa();
-        //B.mostrar();
-        //B.Sacar(2);
+        jugador jugador1=new jugador();
+        jugador1.rellenarAtril();
+        
+        /*
+        bolsa B=new bolsa();
+        B.bolsa();
+        B.Sacar(1);
+        B.mostrar();*/
         
         //Coords punto = new Coords();
         //punto.getCoord();
@@ -39,7 +39,13 @@ public class main
         //MatrizTablero x=new MatrizTablero();
         //x.madematriz();
         //ValidacionPts val = new ValidacionPts();
+
         Matrelleno matriz2 = new Matrelleno();
         matriz2.rellenar();
+
+       /* Matrizlogica matriz = new Matrizlogica();
+        matriz.crearMatrizlogica(15);
+        matriz.setdato(0,9, 123);*/
+
     }
 }
