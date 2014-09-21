@@ -202,5 +202,4 @@ public class ListaSimple<E> implements InterfazLista<E>
     {
         return this.head;
     }
-    
 }

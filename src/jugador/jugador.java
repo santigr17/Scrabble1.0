@@ -10,59 +10,81 @@ public class jugador
     ListaSimple<Integer> Atril=new ListaSimple<Integer>();
     boolean Turno=false;
     int Puntaje=0; 
-    int PrimerFicha=0;
-    Object SigJugador=null;
          
     random R=new random();      
     bolsa B=new bolsa();
     
-    public void TerminarTurno()
-    {
-        this.Turno=false;
-                
-        
+  
+    public Integer getPuntaje(){
+        return this.Puntaje;
     }
-    public void setSiguiente(Object jugador)
-    {
-        SigJugador=jugador;
-        
+    public boolean getTurno(){
+        return this.Turno;
+    } 
+    public ListaSimple<Integer> getAtril()    {
+        return this.Atril;
     }
+
+    public void setPuntaje(int Puntos){
+        this.Puntaje=Puntos;
+    }
+    public void setTurno(boolean turno){
+        this.Turno=turno;           
+    }
+    public void setAtril(ListaSimple atril){
+        this.Atril=atril;
+    }
+   
     public void rellenarAtril()
     {
         B.bolsa();
         NodoListaSimple<Integer> temp = Atril.getcabeza();
-        for (int i=0;i<7;i++)
+        if(Atril.tamaño()==0)
         {
-            int S=R.random();
-            Atril.agregar(S);
-            B.Sacar(S);
-        }
-        Atril.describir();
-        B.mostrar();
-       /** if(Atril.tamaño()==0)
-        {
-            NodoListaSimple<Integer> temp=null;
+            while (Atril.tamaño()<7)
+            {
+                int S1=R.random();
+                Atril.agregar(S1);
+                B.Sacar(S1);
+            }
         }
         else
         {
-            for(int i=0;i<7;i++)
+            while(Atril.tamaño()<7)            
             {
-                System.out.println(temp);
+                if(temp==null)
                 {
-                    
+                    int S2=R.random();
+                    Atril.agregar(S2);
+                    B.Sacar(S2);
                 }
-                       if(temp==null)
-            {
-               temp.setelement(R.random());
-               temp.getNext();
+                temp=temp.getNext();
             }
-           
-            
-        }*/
+        }
+        System.out.print(temp);
+        Atril.describir();
+        B.mostrar();
     } 
     public void mostrar()
     {
         Atril.describir();
     }
+    public void usarFicha(int ficha)
+    {
+        int Compara=Atril.getcabeza().getelem();
+        NodoListaSimple temp=Atril.getcabeza();
+       
+        while(Compara!=ficha)
+        {
+            Compara=(int) temp.getNext().getelem();
+            temp=temp.getNext();
+                       
+        }
+        Atril.eliminar(Compara);
+        this.rellenarAtril();
+    }
+                
 }
+
+
     

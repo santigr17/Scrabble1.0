@@ -70,6 +70,5 @@ public class Matrelleno extends Matrizlogica
        Matriz.setdato(14, 11, letrax2);
        Matriz.setdato(7, 7, centro);
        Matriz.mostrarmatriz(15);
-    }   
-    
+    }     
 }

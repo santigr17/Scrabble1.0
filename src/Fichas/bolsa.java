@@ -10,33 +10,33 @@ public class bolsa <E>
     
     public void bolsa()
         {
-        Bolsa.agregar(2);//Espacio
-        Bolsa.agregar(9);// A
-        Bolsa.agregar(2);// B
-        Bolsa.agregar(2);// C
-        Bolsa.agregar(4);// D
-        Bolsa.agregar(12);// E
-        Bolsa.agregar(2);// F
-        Bolsa.agregar(3);// G
-        Bolsa.agregar(2);// H
-        Bolsa.agregar(9);// I
-        Bolsa.agregar(1);// J
-        Bolsa.agregar(1);// K
-        Bolsa.agregar(4);// L
-        Bolsa.agregar(2);// M
-        Bolsa.agregar(6);// N
-        Bolsa.agregar(8);// O
-        Bolsa.agregar(2);// P
-        Bolsa.agregar(2);// Q
-        Bolsa.agregar(6);// R
-        Bolsa.agregar(4);// S
-        Bolsa.agregar(6);// T
-        Bolsa.agregar(4);// U
-        Bolsa.agregar(2);// V
-        Bolsa.agregar(2);// W
-        Bolsa.agregar(1);// X
-        Bolsa.agregar(2);// Y
-        Bolsa.agregar(1);// Z
+        Bolsa.agregar(2);//Espacio0
+        Bolsa.agregar(9);// A1
+        Bolsa.agregar(2);// B2
+        Bolsa.agregar(2);// C3
+        Bolsa.agregar(4);// D4
+        Bolsa.agregar(12);//E5
+        Bolsa.agregar(2);// F6
+        Bolsa.agregar(3);// G7
+        Bolsa.agregar(2);// H8
+        Bolsa.agregar(9);// I9
+        Bolsa.agregar(1);// J10
+        Bolsa.agregar(1);// K11
+        Bolsa.agregar(4);// L12
+        Bolsa.agregar(2);// M13
+        Bolsa.agregar(6);// N14
+        Bolsa.agregar(8);// O15
+        Bolsa.agregar(2);// P16
+        Bolsa.agregar(2);// Q17
+        Bolsa.agregar(6);// R18
+        Bolsa.agregar(4);// S19
+        Bolsa.agregar(6);// T20
+        Bolsa.agregar(4);// U21
+        Bolsa.agregar(2);// V22
+        Bolsa.agregar(2);// W23
+        Bolsa.agregar(1);// X24
+        Bolsa.agregar(2);// Y25
+        Bolsa.agregar(1);// Z26
     }
     public void mostrar()
         {
@@ -48,7 +48,7 @@ public class bolsa <E>
                 
         }
     public void Sacar(int N)
-        { 
+        {
             NodoListaSimple<Integer> temp = Bolsa.getcabeza();
             for (int i=0;i<N;i++)
             {
