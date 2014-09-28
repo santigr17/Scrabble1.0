@@ -1,8 +1,8 @@
 
-
 package Fichas;
 import ListasSimples.*;
 import javax.swing.JOptionPane;
+import java.util.Random;
 
 public class bolsa <E>
 {  
@@ -63,5 +63,11 @@ public class bolsa <E>
                 temp.getNext().setelement(temp.getelem()-1);
                 }
         }
+    
+    public int random(){ 
+    int R=(int) Math.floor(Math.random()*26+1);
+    //System.out.println(R);
+    return R;
+    }
     
 }
