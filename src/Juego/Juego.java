@@ -6,7 +6,7 @@
 package Juego;
 import Fichas.bolsa;
 
-import GUI.random;
+
 import ListasSimples.ListaSimple;
 import ListasSimples.NodoListaSimple;
 /**

@@ -1,9 +1,9 @@
 import Fichas.bolsa;
-<<<<<<< HEAD
+
 import GUI.*;
 import Juego.Juego;
-=======
->>>>>>> e84ddd3f23c26efd2830ce9ec8963c712ac7a2a7
+
+
 import LeerArchivos.*;
 import LeerArchivos.ValidacionPts;
 import GUI.*;
@@ -12,7 +12,7 @@ import jugador.*;
 
 public class main 
 {
-<<<<<<< HEAD
+
     /**
      * @param args the command line arguments
      */
