@@ -14,6 +14,12 @@ public class jugador
     bolsa R=new bolsa();      
     bolsa B=new bolsa();
     
+    public jugador(){
+        this.Puntaje=0;
+        this.Turno=false;
+        this.rellenarAtril();
+    }
+    
   
     public Integer getPuntaje(){
         return this.Puntaje;
@@ -33,6 +39,14 @@ public class jugador
     }
     public void setAtril(ListaSimple atril){
         this.Atril=atril;
+    }
+    public void borrarAtril(){
+        while(Atril.tamaño()!=0)
+        {
+            Integer temp=Atril.getcabeza().getelem();
+            Atril.eliminar(temp);
+        }
+        System.out.print("Borré la lista");
     }
    
     public void rellenarAtril()
@@ -62,8 +76,7 @@ public class jugador
             }
         }
         System.out.print(temp);
-        Atril.describir();
-        B.mostrar();
+        
     } 
     public void mostrar()
     {

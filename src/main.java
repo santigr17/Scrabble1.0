@@ -1,6 +1,7 @@
 import Fichas.Logicbolsa;
 import Fichas.bolsa;
 import GUI.*;
+import Juego.Juego;
 import LeerArchivos.*;
 import LeerArchivos.ValidacionPts;
 import Matrices.*;
@@ -17,10 +18,17 @@ public class main
         /**ValidacionPts val = new ValidacionPts();
         jugador jugador1=new jugador();
         jugador1.rellenarAtril();
+        jugador jugador2=new jugador();
+        jugador jugador3=new jugador();
+        jugador jugador4=new jugador();
+//        Principal.Turno();
         bolsa B=new bolsa();
         B.bolsa();
         B.Sacar(1);
-        B.mostrar();*/  
+        B.mostrar();
+        jugador1.mostrar();
+        jugador1.borrarAtril();*/
+        
 
     }
 }
