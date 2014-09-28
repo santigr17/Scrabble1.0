@@ -1,12 +1,11 @@
 package GUI;
-
+import Fichas.*;
 public class MetodosGUI 
 {
     public int retorne1()
     {
         System.out.println(1);
         return 1;
-     
     }    
     
     public int retorne2()
@@ -24,10 +23,6 @@ public class MetodosGUI
     {
         System.out.println(4);
         return 4;
-    }
-    public void getdato()
-    {
-        
     }
  }
 

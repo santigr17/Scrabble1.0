@@ -37,7 +37,7 @@ public class jugador
    
     public void rellenarAtril()
     {
-        B.bolsa();
+        B.rellenarbolsa();
         NodoListaSimple<Integer> temp = Atril.getcabeza();
         if(Atril.tamaño()==0)
         {

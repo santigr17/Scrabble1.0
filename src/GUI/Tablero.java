@@ -1,11 +1,11 @@
 package GUI;
-
+import Fichas.*;
 public class Tablero extends javax.swing.JFrame {
     MetodosGUI MG=new MetodosGUI();
-    
+    Logicbolsa bolsa = new Logicbolsa();
     public Tablero() {
         initComponents();
-        this.setLocationRelativeTo(this);
+        this.setLocationRelativeTo(this);    
     }
 
     @SuppressWarnings("unchecked")
@@ -104,19 +104,19 @@ public class Tablero extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cambiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cambiarActionPerformed
-            MG.retorne4();
+            bolsa.bolsainicio(MG.retorne4());
     }//GEN-LAST:event_cambiarActionPerformed
 
     private void colocarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_colocarMouseClicked
-            MG.retorne1();
+            bolsa.bolsainicio(MG.retorne1());
     }//GEN-LAST:event_colocarMouseClicked
 
     private void pasarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pasarMouseClicked
-            MG.retorne3();
+            bolsa.bolsainicio(MG.retorne3());
     }//GEN-LAST:event_pasarMouseClicked
 
     private void quitarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quitarMouseClicked
-            MG.retorne2();
+            bolsa.bolsainicio(MG.retorne2());
     }//GEN-LAST:event_quitarMouseClicked
 
     public static void main(String args[]) {

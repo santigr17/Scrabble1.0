@@ -7,8 +7,7 @@ import java.util.Random;
 public class bolsa <E>
 {  
     ListaSimple<Integer> Bolsa=new ListaSimple<Integer>();
-    
-    public void bolsa()
+    public void rellenarbolsa()
         {
         Bolsa.agregar(2);//Espacio0
         Bolsa.agregar(9);// A1
@@ -37,16 +36,12 @@ public class bolsa <E>
         Bolsa.agregar(1);// X24
         Bolsa.agregar(2);// Y25
         Bolsa.agregar(1);// Z26
-    }
+        }
     public void mostrar()
         {
             Bolsa.describir();
         }
     
-    public void vacio()
-        {
-                
-        }
     public void Sacar(int N)
         {
             NodoListaSimple<Integer> temp = Bolsa.getcabeza();
@@ -55,19 +50,23 @@ public class bolsa <E>
                 temp = temp.getNext();
             }
             if(temp.getelem()>0)
-                {
+            {   
                 temp.setelement(temp.getelem()-1);
-                }
+            }
             else
-                {
-                temp.getNext().setelement(temp.getelem()-1);
-                }
+            {
+                temp.setelement(0);
+            }
         }
     
-    public int random(){ 
-    int R=(int) Math.floor(Math.random()*26+1);
-    //System.out.println(R);
-    return R;
-    }
+    public int random()
+        { 
+        int R=(int) Math.floor(Math.random()*26+1);
+        return R;
+        }
     
+    public int tamaño ()
+    {
+        return Bolsa.tamaño();
+    }
 }

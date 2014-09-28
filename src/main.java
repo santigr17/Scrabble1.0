@@ -1,7 +1,8 @@
+import Fichas.Logicbolsa;
 import Fichas.bolsa;
+import GUI.*;
 import LeerArchivos.*;
 import LeerArchivos.ValidacionPts;
-import GUI.*;
 import Matrices.*;
 import jugador.*;
 
