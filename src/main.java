@@ -1,17 +1,23 @@
+import Fichas.Logicbolsa;
 import Fichas.bolsa;
+<<<<<<< HEAD
 
 import GUI.*;
 import Juego.Juego;
 
 
+=======
+import GUI.*;
+import Juego.Juego;
+>>>>>>> 62b91a3c25723ea395c17b183629734b119b152a
 import LeerArchivos.*;
 import LeerArchivos.ValidacionPts;
-import GUI.*;
 import Matrices.*;
 import jugador.*;
 
 public class main 
 {
+<<<<<<< HEAD
 
     /**
      * @param args the command line arguments
@@ -29,6 +35,8 @@ public class main
         ValidacionPts val = new ValidacionPts();
         Juego Principal=new Juego();
 =======
+=======
+>>>>>>> 62b91a3c25723ea395c17b183629734b119b152a
     public static void main(String[] args) 
     {
         VentanaPrincipal Ventana= new VentanaPrincipal();
@@ -36,7 +44,6 @@ public class main
         //Matrelleno matriz2 = new Matrelleno();
         //matriz2.rellenar();
         /**ValidacionPts val = new ValidacionPts();
->>>>>>> e84ddd3f23c26efd2830ce9ec8963c712ac7a2a7
         jugador jugador1=new jugador();
         jugador1.rellenarAtril();
         jugador jugador2=new jugador();

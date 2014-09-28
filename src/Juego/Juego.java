@@ -1,18 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Juego;
+<<<<<<< HEAD
 import Fichas.bolsa;
 
 
+=======
+import Fichas.*;
+>>>>>>> 62b91a3c25723ea395c17b183629734b119b152a
 import ListasSimples.ListaSimple;
 import ListasSimples.NodoListaSimple;
-/**
- *
- * @author santii
- */
+
 public class Juego {
     int numJugadores=0;
     ListaSimple Orden=new ListaSimple();

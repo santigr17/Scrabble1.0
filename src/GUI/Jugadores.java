@@ -1,9 +1,8 @@
 package GUI;
-
+import Fichas.*;
 public class Jugadores extends javax.swing.JFrame {
     Tablero VTablero = new Tablero();
     MetodosGUI MG=new MetodosGUI();
-    
     public Jugadores() {
         initComponents();
         this.setLocationRelativeTo(this);
@@ -69,13 +68,13 @@ public class Jugadores extends javax.swing.JFrame {
     }//GEN-LAST:event_Juga3ActionPerformed
 
     private void Juga4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Juga4ActionPerformed
-       MG.retorne4();
+        MG.retorne4();
        VTablero.setVisible(true);
        this.setVisible(false);
     }//GEN-LAST:event_Juga4ActionPerformed
 
     private void Juga2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Juga2MouseClicked
-        MG.retorne2();
+          MG.retorne2();
         VTablero.setVisible(true);
         VTablero.Juga3.setVisible(false);
         VTablero.Juga4.setVisible(false);
