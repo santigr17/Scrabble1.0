@@ -23,7 +23,7 @@ public class WordScore
         return addScores(scoreCalc(wordToCharList(this.word)));
     }
     
-    private ListaSimple<Character> wordToCharList(String pWord){
+    public ListaSimple<Character> wordToCharList(String pWord){
         ListaSimple <Character> charList = new ListaSimple(); 
         try 
         {
@@ -39,25 +39,23 @@ public class WordScore
         }
     }
     
-    private ListaSimple<Integer> scoreCalc(ListaSimple<Character> pCharList)
+    public ListaSimple<Integer> scoreCalc(ListaSimple<Character> pCharList)
     {
         ListaSimple <Character> tmpString = pCharList;
         ListaSimple <Integer> scores = new ListaSimple();
-        while (tmpString.tamaño() != 0){
-            //try{
-             
-                
+        while (tmpString.tamaño() != 0)
+        {
                 String tmp = tmpString.cola().toString();
                 if (tmp.equals("a")| 
-                       tmp.equals("e") |
-                        tmp.equals("i") |
-                        tmp.equals("o") |
-                        tmp.equals("u") |
-                        tmp.equals("n") |
-                        tmp.equals("r") |
-                        tmp.equals("l") |
-                        tmp.equals("t") |
-                        tmp.equals("s"))
+                    tmp.equals("e") |
+                    tmp.equals("i") |
+                    tmp.equals("o") |
+                    tmp.equals("u") |
+                    tmp.equals("n") |
+                    tmp.equals("r") |
+                    tmp.equals("l") |
+                    tmp.equals("t") |
+                    tmp.equals("s"))
                 {
                     scores.agregar(1);
                 }
@@ -103,13 +101,36 @@ public class WordScore
         }
         return scores;
     }
-    private int addScores(ListaSimple<Integer> pScores)
+    public int addScores(ListaSimple<Integer> pScores)
     { 
         int tmp = 0;
         while (pScores.tamaño() != 0)
         {
             int tmp2 = pScores.cola();
-            tmp += tmp2;            
+            tmp += 2*tmp2;            
+            tmp2 = pScores.cortar();
+        }
+        return tmp;
+    }
+    public int Palabrax3(ListaSimple<Integer> pScores)
+    {
+         int tmp = 0;
+        while (pScores.tamaño() != 0)
+        {
+            int tmp2 = pScores.cola();
+            tmp += 3*tmp2;
+            tmp2 = pScores.cortar();
+        }
+        return tmp;
+    }
+    
+    public int Palabrax2(ListaSimple<Integer> pScores)
+    {
+         int tmp = 0;
+        while (pScores.tamaño() != 0)
+        {
+            int tmp2 = pScores.cola();
+            tmp += 2*tmp2;
             tmp2 = pScores.cortar();
         }
         return tmp;

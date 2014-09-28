@@ -1,17 +1,17 @@
 
 package jugador;
 import Fichas.bolsa;
-import GUI.random;
 import ListasSimples.ListaSimple;
 import ListasSimples.NodoListaSimple;
 
 public class jugador
 {
+    
     ListaSimple<Integer> Atril=new ListaSimple<Integer>();
     boolean Turno=false;
     int Puntaje=0; 
          
-    random R=new random();      
+    bolsa R=new bolsa();      
     bolsa B=new bolsa();
     
   
