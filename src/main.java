@@ -9,6 +9,7 @@ import jugador.*;
 
 public class main 
 {
+
     public static void main(String[] args) 
     {
         VentanaPrincipal Ventana= new VentanaPrincipal();
