@@ -1,5 +1,9 @@
 package GUI;
 import Fichas.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
 public class MetodosGUI 
 {
     public int retorne1()
@@ -24,6 +28,9 @@ public class MetodosGUI
         System.out.println(4);
         return 4;
     }
+    
+        
+    
  }
 
 

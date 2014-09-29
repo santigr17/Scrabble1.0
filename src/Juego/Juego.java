@@ -1,11 +1,10 @@
 package Juego;
-<<<<<<< HEAD
 import Fichas.bolsa;
 
 
-=======
+
 import Fichas.*;
->>>>>>> 62b91a3c25723ea395c17b183629734b119b152a
+
 import ListasSimples.ListaSimple;
 import ListasSimples.NodoListaSimple;
 
