@@ -7,8 +7,8 @@ public class jugador
 {
     
     ListaSimple<Integer> Atril=new ListaSimple<Integer>();
-    int Puntaje=0; 
-    int Turno=0;
+    int Puntaje; 
+    int Turno;
 
     
     public jugador(){
