@@ -13,7 +13,7 @@ import Juego.Juego;
 
 
 import GUI.*;
-import jugador.LogicJugador;
+import jugador.LogicaJugador;
 
 import LeerArchivos.*;
 import LeerArchivos.ValidacionPts;
