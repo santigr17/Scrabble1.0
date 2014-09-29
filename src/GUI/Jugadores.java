@@ -90,7 +90,7 @@ public class Jugadores extends javax.swing.JFrame {
         VTablero.setVisible(true);
         VTablero.Juga3.setVisible(false);
         VTablero.Juga4.setVisible(false);
-        VTablero.C.pintarAtriles(jugador.Atril1, this.getGraphics(), 100,150);
+        //VTablero.C.pintarAtriles(jugador.Atril1, this.getGraphics(), 100,150);
         //this.setVisible(false);
         
     }//GEN-LAST:event_Juga2MouseClicked
