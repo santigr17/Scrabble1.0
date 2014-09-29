@@ -6,10 +6,8 @@ import ListasSimples.NodoListaSimple;
 
 public class LogicJugador extends jugador{
     
-     
-    bolsa R=new bolsa();      
-    bolsa B=new bolsa();
     
+   
     int jugadores=0;
     int TrunoActual=0;
     int numJugadores=4;
@@ -54,7 +52,7 @@ public class LogicJugador extends jugador{
             {
                 int S1=R.random();
                 Atril.agregar(S1);
-                B.Sacar(S1);
+                //B.Sacar(S1);
             }
         }
         else
@@ -65,7 +63,7 @@ public class LogicJugador extends jugador{
                 {
                     int S2=R.random();
                     Atril.agregar(S2);
-                    B.Sacar(S2);
+                    //B.Sacar(S2);
                 }
                 temp=temp.getNext();
             }

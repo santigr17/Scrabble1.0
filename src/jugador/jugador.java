@@ -25,7 +25,6 @@ public class jugador
     public ListaSimple<Integer> getAtril()    {
         return this.Atril;
     }
-
     public void setPuntaje(int Puntos){
         this.Puntaje=Puntos;
     }
@@ -34,8 +33,10 @@ public class jugador
     }
     public void setAtril(ListaSimple atril){
         this.Atril=atril;
-    }
-                
+    }    
+    public void SumarPuntos(int puntos){
+        this.Puntaje=this.Puntaje+puntos;
+    }               
 }
 
 
