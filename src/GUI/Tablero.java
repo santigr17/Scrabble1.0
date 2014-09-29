@@ -1,10 +1,5 @@
 package GUI;
 import Fichas.*;
-import ListasSimples.ListaSimple;
-import ListasSimples.NodoListaSimple;
-import java.awt.Graphics;
-import javax.swing.ImageIcon;
-import static javax.swing.text.html.HTML.Tag.HEAD;
 public class Tablero extends javax.swing.JFrame {
 
     MetodosGUI MG = new MetodosGUI();
@@ -34,10 +29,6 @@ public class Tablero extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1200, 600));
         getContentPane().setLayout(null);
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 911bd9444521bb0bb8c023f4b7e32b06f6c40522
         tablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/tablero.png"))); // NOI18N
         getContentPane().add(tablero);
         tablero.setBounds(620, 20, 570, 570);
