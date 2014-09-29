@@ -3,6 +3,7 @@ import Fichas.*;
 public class Jugadores extends javax.swing.JFrame {
     Tablero VTablero = new Tablero();
     MetodosGUI MG=new MetodosGUI();
+    FichasJugador jugador=new FichasJugador();
     public Jugadores() {
         initComponents();
         this.setLocationRelativeTo(this);
@@ -61,20 +62,20 @@ public class Jugadores extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Juga3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Juga3ActionPerformed
-       MG.retorne3();
+       jugador.inicioatril(MG.retorne3());
        VTablero.setVisible(true);
        VTablero.Juga4.setVisible(false);
        this.setVisible(false);  
     }//GEN-LAST:event_Juga3ActionPerformed
 
     private void Juga4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Juga4ActionPerformed
-        MG.retorne4();
+       jugador.inicioatril(MG.retorne4());
        VTablero.setVisible(true);
        this.setVisible(false);
     }//GEN-LAST:event_Juga4ActionPerformed
 
     private void Juga2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Juga2MouseClicked
-          MG.retorne2();
+        jugador.inicioatril(MG.retorne2());
         VTablero.setVisible(true);
         VTablero.Juga3.setVisible(false);
         VTablero.Juga4.setVisible(false);

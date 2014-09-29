@@ -3,16 +3,18 @@ import Fichas.*;
 public class Tablero extends javax.swing.JFrame {
     MetodosGUI MG=new MetodosGUI();
     Logicbolsa bolsa = new Logicbolsa();
+    CargarImagenes C = new CargarImagenes();
+    
     public Tablero() {
         initComponents();
-        this.setLocationRelativeTo(this);    
+        this.setLocationRelativeTo(this); 
+        
     }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        tablero = new javax.swing.JLabel();
         colocar = new javax.swing.JButton();
         quitar = new javax.swing.JButton();
         pasar = new javax.swing.JButton();
@@ -21,6 +23,7 @@ public class Tablero extends javax.swing.JFrame {
         Juga2 = new javax.swing.JLabel();
         Juga3 = new javax.swing.JLabel();
         Juga4 = new javax.swing.JLabel();
+        tablero = new javax.swing.JLabel();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -30,6 +33,7 @@ public class Tablero extends javax.swing.JFrame {
         tablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/tablero.png"))); // NOI18N
         getContentPane().add(tablero);
         tablero.setBounds(620, 20, 570, 570);
+
 
         colocar.setFont(new java.awt.Font("Ubuntu Medium", 1, 18)); // NOI18N
         colocar.setText("Colocar(A)");
@@ -95,6 +99,10 @@ public class Tablero extends javax.swing.JFrame {
         getContentPane().add(Juga4);
         Juga4.setBounds(20, 190, 110, 30);
 
+        tablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/tablero.png"))); // NOI18N
+        getContentPane().add(tablero);
+        tablero.setBounds(610, 10, 570, 570);
+
         fondo.setForeground(new java.awt.Color(252, 236, 236));
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondomesa.png"))); // NOI18N
         getContentPane().add(fondo);
@@ -105,10 +113,12 @@ public class Tablero extends javax.swing.JFrame {
 
     private void cambiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cambiarActionPerformed
             bolsa.bolsainicio(MG.retorne4());
+            
     }//GEN-LAST:event_cambiarActionPerformed
 
     private void colocarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_colocarMouseClicked
             bolsa.bolsainicio(MG.retorne1());
+            C.cargarImagen(this.getGraphics());
     }//GEN-LAST:event_colocarMouseClicked
 
     private void pasarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pasarMouseClicked
