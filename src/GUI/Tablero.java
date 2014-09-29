@@ -30,6 +30,13 @@ public class Tablero extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1200, 600));
         getContentPane().setLayout(null);
 
+<<<<<<< HEAD
+=======
+        tablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/tablero.png"))); // NOI18N
+        getContentPane().add(tablero);
+        tablero.setBounds(620, 20, 570, 570);
+
+>>>>>>> 1f7c7e998bbce99728b5418aab994d4eb34810b2
         colocar.setFont(new java.awt.Font("Ubuntu Medium", 1, 18)); // NOI18N
         colocar.setText("Colocar(A)");
         colocar.addMouseListener(new java.awt.event.MouseAdapter() {

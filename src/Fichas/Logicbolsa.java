@@ -18,6 +18,7 @@ public class Logicbolsa extends bolsa
             if (marcador1 == 4)
             {
                bolsa.Sacar(bolsa.random());
+               bolsa.meter(bolsa.random());
                bolsa.mostrar();
             }
         }
