@@ -1,4 +1,19 @@
 package GUI;
+<<<<<<< HEAD
+import Fichas.*;
+public class Tablero extends javax.swing.JFrame {
+    MetodosGUI MG=new MetodosGUI();
+    Logicbolsa bolsa = new Logicbolsa();
+    CargarImagenes C = new CargarImagenes();
+    
+    public Tablero() {
+        initComponents();
+        this.setLocationRelativeTo(this); 
+        
+    }
+
+    @SuppressWarnings("unchecked")
+=======
 
 import Fichas.*;
 import static javax.swing.text.html.HTML.Tag.HEAD;
@@ -16,6 +31,7 @@ public class Tablero extends javax.swing.JFrame {
     }
 
 
+>>>>>>> afc7e67b3ecd7a1809069e0e991b25d8bd0ff6b8
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -118,6 +134,23 @@ public class Tablero extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cambiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cambiarActionPerformed
+<<<<<<< HEAD
+            bolsa.bolsainicio(MG.retorne4());
+            
+    }//GEN-LAST:event_cambiarActionPerformed
+
+    private void colocarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_colocarMouseClicked
+            bolsa.bolsainicio(MG.retorne1());
+            C.cargarImagen(this.getGraphics());
+    }//GEN-LAST:event_colocarMouseClicked
+
+    private void pasarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pasarMouseClicked
+            bolsa.bolsainicio(MG.retorne3());
+    }//GEN-LAST:event_pasarMouseClicked
+
+    private void quitarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quitarMouseClicked
+            bolsa.bolsainicio(MG.retorne2());
+=======
         bolsa.bolsainicio(MG.retorne4());
 
     }//GEN-LAST:event_cambiarActionPerformed
@@ -133,6 +166,7 @@ public class Tablero extends javax.swing.JFrame {
 
     private void quitarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quitarMouseClicked
         bolsa.bolsainicio(MG.retorne2());
+>>>>>>> afc7e67b3ecd7a1809069e0e991b25d8bd0ff6b8
     }//GEN-LAST:event_quitarMouseClicked
 
     public static void main(String args[]) {
