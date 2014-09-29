@@ -21,7 +21,7 @@ public class main
         jugador jugador2=new jugador();
         jugador jugador3=new jugador();
         jugador jugador4=new jugador();
-//        Principal.Turno();
+        Principal.Turno();
         bolsa B=new bolsa();
         B.bolsa();
         B.Sacar(1);

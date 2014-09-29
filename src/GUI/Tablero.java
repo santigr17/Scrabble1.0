@@ -29,7 +29,7 @@ public class Tablero extends javax.swing.JFrame {
 
         tablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/tablero.png"))); // NOI18N
         getContentPane().add(tablero);
-        tablero.setBounds(630, 0, 570, 570);
+        tablero.setBounds(620, 20, 570, 570);
 
         colocar.setFont(new java.awt.Font("Ubuntu Medium", 1, 18)); // NOI18N
         colocar.setText("Colocar(A)");

@@ -9,6 +9,7 @@ public class bolsa <E>
     ListaSimple<Integer> Bolsa=new ListaSimple<Integer>();
     public void rellenarbolsa()
         {
+        Bolsa.agregar(0);//Cabeza
         Bolsa.agregar(2);//Espacio0
         Bolsa.agregar(9);// A1
         Bolsa.agregar(2);// B2
@@ -59,9 +60,27 @@ public class bolsa <E>
             }
         }
     
+        public void meter(int N)
+        {
+            NodoListaSimple<Integer> temp = Bolsa.getcabeza();
+            for (int i=0;i<N;i++)
+            {
+                temp = temp.getNext();
+            }
+            if(temp.getelem()>0)
+            {   
+                temp.setelement(temp.getelem()+1);
+            }
+            else
+            {
+                temp.setelement(temp.getelem()+1);
+            }
+        }
+    
+    
     public int random()
         { 
-        int R=(int) Math.floor(Math.random()*26+1);
+        int R=(int) Math.floor(Math.random()*27+1);
         return R;
         }
     
