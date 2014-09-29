@@ -1,12 +1,16 @@
 package GUI;
 import Fichas.*;
+import ListasSimples.*;
 public class Jugadores extends javax.swing.JFrame {
     Tablero VTablero = new Tablero();
     MetodosGUI MG=new MetodosGUI();
     FichasJugador jugador=new FichasJugador();
+    CargarImagenes C = new CargarImagenes();
+    
     public Jugadores() {
         initComponents();
         this.setLocationRelativeTo(this);
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -28,6 +32,11 @@ public class Jugadores extends javax.swing.JFrame {
         Juga2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Juga2MouseClicked(evt);
+            }
+        });
+        Juga2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Juga2ActionPerformed(evt);
             }
         });
         getContentPane().add(Juga2);
@@ -68,19 +77,27 @@ public class Jugadores extends javax.swing.JFrame {
        this.setVisible(false);  
     }//GEN-LAST:event_Juga3ActionPerformed
 
+    
     private void Juga4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Juga4ActionPerformed
        jugador.inicioatril(MG.retorne4());
        VTablero.setVisible(true);
        this.setVisible(false);
     }//GEN-LAST:event_Juga4ActionPerformed
 
+    
     private void Juga2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Juga2MouseClicked
         jugador.inicioatril(MG.retorne2());
         VTablero.setVisible(true);
         VTablero.Juga3.setVisible(false);
         VTablero.Juga4.setVisible(false);
-        this.setVisible(false);
+        VTablero.C.pintarAtriles(jugador.Atril1, this.getGraphics(), 100,150);
+        //this.setVisible(false);
+        
     }//GEN-LAST:event_Juga2MouseClicked
+
+    private void Juga2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Juga2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Juga2ActionPerformed
 
     public static void main(String args[]) {
 
@@ -91,6 +108,7 @@ public class Jugadores extends javax.swing.JFrame {
         });
     }
 
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel FondoJugadores;
     public javax.swing.JButton Juga2;
