@@ -13,7 +13,7 @@ public class CargarImagenes {
     public ImageIcon CrearIcon()
     {
         ImageIcon letra;
-        letra = new ImageIcon(new ImageIcon(getClass().getResource("/imagenes/e.png")).getImage());
+        letra = new ImageIcon(new ImageIcon(getClass().getResource("/imagenes/0.png")).getImage());
         return letra;
     }
     
@@ -21,6 +21,11 @@ public class CargarImagenes {
     {
         g.drawImage(CrearIcon().getImage(), 685, 125, 33,33,null);
         System.out.println("Letra colocada");
+        
+    }
+    
+    public void pintarAtriles()
+    {
         
     }
 }
