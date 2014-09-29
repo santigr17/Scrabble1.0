@@ -2,10 +2,10 @@ package Fichas;
 import ListasSimples.ListaSimple;
 public class FichasJugador extends Logicbolsa 
 {
-    ListaSimple Atril1 = new ListaSimple();
-    ListaSimple Atril2 = new ListaSimple();
-    ListaSimple Atril3 = new ListaSimple();
-    ListaSimple Atril4 = new ListaSimple();
+    public ListaSimple Atril1 = new ListaSimple();
+    public ListaSimple Atril2 = new ListaSimple();
+    public ListaSimple Atril3 = new ListaSimple();
+    public ListaSimple Atril4 = new ListaSimple();
     bolsa bolsa1 = new bolsa();
     public void inicioatril(int marcador)
     {

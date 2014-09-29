@@ -1,20 +1,24 @@
 package GUI;
 import Fichas.*;
+import ListasSimples.ListaSimple;
+import ListasSimples.NodoListaSimple;
+import java.awt.Graphics;
+import javax.swing.ImageIcon;
+import static javax.swing.text.html.HTML.Tag.HEAD;
 public class Tablero extends javax.swing.JFrame {
-    MetodosGUI MG=new MetodosGUI();
+
+    MetodosGUI MG = new MetodosGUI();
     Logicbolsa bolsa = new Logicbolsa();
     CargarImagenes C = new CargarImagenes();
+    FichasJugador jugador=new FichasJugador();
     
-    public Tablero() {
+    public Tablero() 
+    {
         initComponents();
         this.setLocationRelativeTo(this); 
-        
     }
-
-    @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+ 
     private void initComponents() {
-
         colocar = new javax.swing.JButton();
         quitar = new javax.swing.JButton();
         pasar = new javax.swing.JButton();
@@ -30,6 +34,10 @@ public class Tablero extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1200, 600));
         getContentPane().setLayout(null);
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 911bd9444521bb0bb8c023f4b7e32b06f6c40522
         tablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/tablero.png"))); // NOI18N
         getContentPane().add(tablero);
         tablero.setBounds(620, 20, 570, 570);
@@ -109,24 +117,26 @@ public class Tablero extends javax.swing.JFrame {
         fondo.setBounds(0, 0, 1200, 600);
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
     private void cambiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cambiarActionPerformed
-            bolsa.bolsainicio(MG.retorne4());
-            
+        bolsa.bolsainicio(MG.retorne4());
+
     }//GEN-LAST:event_cambiarActionPerformed
 
     private void colocarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_colocarMouseClicked
-            bolsa.bolsainicio(MG.retorne1());
-            C.cargarImagen(this.getGraphics());
+        bolsa.bolsainicio(MG.retorne1());
+        
     }//GEN-LAST:event_colocarMouseClicked
 
     private void pasarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pasarMouseClicked
-            bolsa.bolsainicio(MG.retorne3());
+        bolsa.bolsainicio(MG.retorne3());
+        jugador.inicioatril(MG.retorne3());
+        C.pintarAtriles(jugador.Atril1, this.getGraphics(), 100,150);
     }//GEN-LAST:event_pasarMouseClicked
 
     private void quitarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quitarMouseClicked
-            bolsa.bolsainicio(MG.retorne2());
+        bolsa.bolsainicio(MG.retorne2());
     }//GEN-LAST:event_quitarMouseClicked
 
     public static void main(String args[]) {
@@ -137,7 +147,6 @@ public class Tablero extends javax.swing.JFrame {
             }
         });
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JLabel Juga1;
     public javax.swing.JLabel Juga2;
