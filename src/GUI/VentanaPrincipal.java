@@ -1,7 +1,7 @@
 package GUI;
 
 public class VentanaPrincipal extends javax.swing.JFrame {
-    Jugadores SJ= new Jugadores();
+    Tablero TB=new Tablero();
     public VentanaPrincipal() {
         initComponents();
         this.setLocationRelativeTo(this);
@@ -25,6 +25,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 BotonPlayMouseClicked(evt);
             }
         });
+        BotonPlay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonPlayActionPerformed(evt);
+            }
+        });
         getContentPane().add(BotonPlay);
         BotonPlay.setBounds(540, 280, 152, 102);
 
@@ -36,9 +41,13 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotonPlayMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonPlayMouseClicked
-    SJ.setVisible(true);
+    TB.setVisible(true);
     this.setVisible(false);
     }//GEN-LAST:event_BotonPlayMouseClicked
+
+    private void BotonPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPlayActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonPlayActionPerformed
 
     public void main() {
 

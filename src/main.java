@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 import GUI.*;
 import Fichas.Logicbolsa;
 import Fichas.bolsa;
@@ -15,6 +16,12 @@ import LeerArchivos.*;
 import LeerArchivos.ValidacionPts;
 import Matrices.*;
 import jugador.*;
+=======
+import GUI.*;
+
+
+
+>>>>>>> 1ca0f09aac365f9aac2f361e847c938636d1ce80
 
 public class main 
 {
